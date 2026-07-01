@@ -1,0 +1,237 @@
+.courses-page {
+    padding: 20px 0;
+}
+
+.courses-page .page-header {
+    margin-bottom: 24px;
+}
+
+.courses-page .page-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.courses-page .page-header p {
+    font-size: 15px;
+    color: #5c5c5c;
+}
+
+.course-dashboard {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 24px;
+    width: 100%;
+}
+
+.course-panel,
+.course-list-panel {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(55, 50, 96, 0.08);
+    padding: 28px;
+}
+
+.course-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.field-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4c4c4c;
+}
+
+.field-group input,
+.field-group select {
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid #e2e2e2;
+    font-size: 15px;
+    outline: none;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.field-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7'%3E%3Cpath fill='%236b6b6b' d='M0 0l5 7 5-7H0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 10px 7px;
+    cursor: pointer;
+}
+
+.field-group input:focus,
+.field-group select:focus {
+    border-color: #8b5cf6;
+}
+
+.btn-register {
+    grid-column: span 2;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #cf71cf 0%, #8b5cf6 100%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-register:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 24px rgba(139, 92, 246, 0.2);
+}
+
+.course-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.course-summary .summary-label {
+    display: block;
+    color: #4c4c4c;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.course-summary h2 {
+    font-size: 48px;
+    margin: 0;
+    color: #2d2d2d;
+}
+
+.btn-clear-completed {
+    border: none;
+    background: #763a76;
+    color: #d8a1f0;
+    border-radius: 14px;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.btn-clear-completed:hover {
+    background: #8b5cf6;
+}
+
+.course-list-panel .list-title {
+    margin: 0 0 18px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.course-list {
+    display: grid;
+    gap: 14px;
+}
+
+.course-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 20px;
+    border-radius: 18px;
+    background: #f9f7ff;
+    border: 1px solid #ece7ff;
+}
+
+.course-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.course-title {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    color: #2d2d2d;
+}
+
+.course-meta {
+    font-size: 14px;
+    color: #6f6f6f;
+}
+
+.delete-course {
+    border: none;
+    background: #fff;
+    color: #9b5cb1;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(139, 92, 246, 0.12);
+}
+
+.delete-course:hover {
+    background: #f5f0ff;
+}
+
+@media (max-width: 1024px) {
+    .course-dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .btn-register {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    .courses-page {
+        padding: 20px 16px;
+    }
+
+    .course-dashboard {
+        gap: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-form {
+        grid-template-columns: 1fr;
+    }
+
+    .course-summary {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-panel,
+    .course-list-panel {
+        padding: 22px;
+    }
+
+    .course-summary h2 {
+        font-size: 36px;
+    }
+
+    .field-group input {
+        padding: 12px 14px;
+    }
+}

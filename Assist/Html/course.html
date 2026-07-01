@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="../Css/dashboard.css">
+    <link rel="stylesheet" href="../Css/courses.css">
+    <title>Course Registration</title>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <a href="../Html/dashboard.html"><img src="../Images/main-logo.png" alt="logo"></a>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="../Html/dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                <li><a href="../Html/course.html" class="active"><i class="fa-solid fa-book-open"></i>My Courses</a></li>
+                <li><a href="../Html/to-dolist.html"><i class="fa-solid fa-list-check"></i>To-Do List</a></li>
+                <li><a href="../Html/calculator.html"><i class="fa-solid fa-calculator"></i>Calculator</a></li>
+                <li><a href="../Html/gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></li>
+            </ul>
+            <ul class="sidebar-footer">
+                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="dashboard-content">
+            <header class="dashboard-header">
+                <div class="header-search">
+                    <input type="text" placeholder="Search anything">
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+                </div>
+                <div class="header-user">
+                    <img src="../Images/profile.png" alt="User avatar">
+                    <div class="user-details">
+                        <h3>John Doe</h3>
+                        <span>Student</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="courses-page">
+                <div class="page-header">
+                    <h1>Course Registration</h1>
+                    <p>Add courses and keep track of how many are registered.</p>
+                </div>
+
+                <div class="course-dashboard">
+                    <div class="course-panel">
+                        <form id="course-form" class="course-form">
+                            <div class="field-group">
+                                <label for="course-name">Select Course</label>
+                                <select id="course-name" required>
+                                    <option value="" disabled selected>Choose a course</option>
+                                    <option value="HTML101">HTML - HyperText Markup Language</option>
+                                    <option value="CSS101">CSS - Cascading Style Sheets</option>
+                                    <option value="JS101">JavaScript - Web Programming</option>
+                                    <option value="REACT101">React - Frontend Library</option>
+                                    <option value="BOOT101">Bootstrap - UI Framework</option>
+                                </select>
+                            </div>
+                            <div class="field-group">
+                                <label for="course-code">Course Code</label>
+                                <input type="text" id="course-code" readonly>
+                            </div>
+                            <div class="field-group">
+                                <label for="course-type">Course Type</label>
+                                <input type="text" id="course-type" readonly>
+                            </div>
+                            <button type="submit" class="btn-register"><i class="fa-solid fa-circle-plus"></i> Register Course</button>
+                        </form>
+
+                        <div class="course-summary">
+                            <div>
+                                <span class="summary-label">Registered Courses</span>
+                                <h2 id="course-count">0</h2>
+                            </div>
+                            <button id="clear-courses" class="btn-clear-completed">Clear All</button>
+                        </div>
+                    </div>
+
+                    <div class="course-list-panel">
+                        <h2 class="list-title">Registered Courses</h2>
+                        <ul id="course-list" class="course-list"></ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="../Script/course.js"></script>
+</body>
+</html>

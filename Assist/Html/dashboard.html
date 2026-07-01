@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="../Css/dashboard.css">
+
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <a href="../Html/dashboard.html"><img src="../Images/main-logo.png" alt="logo"></a>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="../Html/dashboard.html"><i class="fa-solid fa-house"></i> <span>Dashboard</span></a></li>
+                <li><a href="../Html/course.html"><i class="fa-solid fa-book-open"></i><span> My Courses</span></a></li>
+                <li><a href="../Html/to-dolist.html"><i class="fa-solid fa-list-check"></i><span>To-Do List</span></a></li>
+                <li><a href="../Html/calculator.html"><i class="fa-solid fa-calculator"></i><span>Calculator</span></a></li>
+                <li><a href="../Html/gallery.html"><i class="fa-solid fa-image"></i><span>Gallery</span></a></li>
+            </ul>
+            <ul class="sidebar-footer">
+                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i><Span>Logout</Span></a></li>
+            </ul>
+        </div>
+
+    <div class="dashboard-content">
+        <header class="dashboard-header">
+            <div class="header-search">
+                <input type="text" placeholder="Search anything">
+                <i class="fa-solid fa-magnifying-glass search"></i>
+            </div>
+            <div class="header-user">
+                <img src="../Images/profile.png" alt="User avatar">
+                <div class="user-details">
+                    <h3>John Doe</h3>
+                    <span>Student</span>
+                </div>
+            </div>
+        </header>
+    <section class="content1">
+        <h1>Welcome Back, John <i></i></h1>
+        <p>Here's what's happening with your Learning today.</p>
+        <div class="cards">  
+        <div class="card">
+            <p class="tp"><img src="../Images/enrolled.png" alt="icon">
+            <span>5</span></p>
+            <p>Enrolled Courses</p>
+        </div>
+
+        <div class="card">
+            <p class="tp"><img src="../Images/complete.png" alt="icon">
+            <span>12</span></p>
+            <p>Complete Lessons</p>
+        </div>
+
+        <div class="card">
+            <p class="tp"><img src="../Images/assignment.png" alt="icon">
+            <span>3</span></p>
+            <p>Assignment Due</p>
+        </div>
+
+        <div class="card">
+           <p class="tp"><img src="../Images/service1.png" alt="icon">
+            <span>85%</span></p>
+            <p>Overall Progress</p>
+        </div>
+        </div> 
+    </section>
+
+    <section class="content2">
+        <div class="lhs">
+            <div class="section-header">
+                <h2>My Courses Progress</h2>
+            </div>
+            <div class="progress-list">
+                <div class="progress">
+                    <div class="proimg">
+                        <img src="../Images/html5.png" alt="">
+                    </div>
+                    <div class="promain">
+                        <p>HTML Fundamentals</p>
+                        <div class="rate"><span style="width: 75%"></span></div>
+                    </div>
+                    <div class="percent">
+                        <p>75%</p>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="proimg">
+                        <img src="../Images/css3.png" alt="">
+                    </div>
+                    <div class="promain">
+                        <p>CSS Styling</p>
+                        <div class="rate"><span style="width: 60%"></span></div>
+                    </div>
+                    <div class="percent">
+                        <p>60%</p>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="proimg">
+                        <img src="../Images/javascript.png" alt="">
+                    </div>
+                    <div class="promain">
+                        <p>JavaScript Basics</p>
+                        <div class="rate"><span style="width: 40%"></span></div>
+                    </div>
+                    <div class="percent">
+                        <p>40%</p>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="proimg">
+                        <img src="../Images/react.png" alt="">
+                    </div>
+                    <div class="promain">
+                        <p>React Fundamentals</p>
+                        <div class="rate"><span style="width: 20%"></span></div>
+                    </div>
+                    <div class="percent">
+                        <p>20%</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="rhs">
+            <div class="section-header">
+                <h2>Tasks</h2>
+                <a href="">View All</a>
+            </div>
+            <div class="task-list">
+                <div class="progress">
+                    <div class="taskimg">
+                        <img src="../Images/service2.png" alt="">
+                    </div>
+                    <div class="promain">
+                        <p>Responsive Design Assignment</p>
+                        <span>Due in 2 days</span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="taskimg">
+                        <img src="../Images/service2.png" alt="">
+                    </div>
+                    <div class="promain">
+                        <p>Quiz Review</p>
+                        <span>Due tomorrow</span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="taskimg">
+                        <img src="../Images/service2.png" alt="">
+                    </div>
+                    <div class="promain">
+                        <p>Project Planning</p>
+                        <span>Due in 4 days</span>
+                    </div>
+                </div>
+            </div>
+            <p class="but"><button>View All Tasks</button></p>
+        </div>
+    </section>
+
+    <section class="content3">
+        <h2>Upcoming Schedule</h2>
+        <div class="schedule">
+            <div class="schedule-icon">
+                <i class="fa-solid fa-calendar"></i>
+            </div>
+            <div class="schedule-details">
+                <p class="schedule-date">May 25, 2025</p>
+                <p class="schedule-time">10:30 AM</p>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="../Css/dashboard.css">
+    <link rel="stylesheet" href="../Css/calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="dashboard">
+        <div class="dashboard-sidebar">
+            <div class="sidebar-header">
+                <a href="../Html/dashboard.html"><img src="../Images/main-logo.png" alt="logo"></a>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="../Html/dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a></li>
+                <li><a href="../Html/course.html"><i class="fa-solid fa-book-open"></i>My Courses</a></li>
+                <li><a href="../Html/to-dolist.html"><i class="fa-solid fa-list-check"></i>To-Do List</a></li>
+                <li><a href="../Html/calculator.html" class="active"><i class="fa-solid fa-calculator"></i>Calculator</a></li>
+                <li><a href="../Html/gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></li>
+            </ul>
+            <ul class="sidebar-footer">
+                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+            </ul>
+        </div>
+
+        <div class="dashboard-content">
+            <header class="dashboard-header">
+                <div class="header-search">
+                    <input type="text" placeholder="Search anything">
+                    <i class="fa-solid fa-magnifying-glass search"></i>
+                </div>
+                <div class="header-user">
+                    <img src="../Images/profile.png" alt="User avatar">
+                    <div class="user-details">
+                        <h3>John Doe</h3>
+                        <span>Student</span>
+                    </div>
+                </div>
+            </header>
+            <div class="calculator-page">
+                <div class="page-header">
+                    <h1>Calculator</h1>
+                    <p>Simple and quick calculations</p>
+                </div>
+                <div class="calculator-container">
+                    <div class="calculator">
+                        <div class="display">
+                            <input type="text" id="display" placeholder="0" readonly>
+                        </div>
+                        <div class="buttons-grid">
+                            <button class="btn btn-clear" onclick="clearDisplay()">AC</button>
+                            <button class="btn btn-operator" onclick="deleteLastChar()">DEL</button>
+                            <button class="btn btn-operator" onclick="appendOperator('/')">÷</button>
+                            <button class="btn btn-operator" onclick="appendOperator('*')">×</button>
+
+                            <button class="btn btn-number" onclick="appendNumber('7')">7</button>
+                            <button class="btn btn-number" onclick="appendNumber('8')">8</button>
+                            <button class="btn btn-number" onclick="appendNumber('9')">9</button>
+                            <button class="btn btn-operator" onclick="appendOperator('-')">−</button>
+
+                            <button class="btn btn-number" onclick="appendNumber('4')">4</button>
+                            <button class="btn btn-number" onclick="appendNumber('5')">5</button>
+                            <button class="btn btn-number" onclick="appendNumber('6')">6</button>
+                            <button class="btn btn-operator" onclick="appendOperator('+')">+</button>
+
+                            <button class="btn btn-number" onclick="appendNumber('1')">1</button>
+                            <button class="btn btn-number" onclick="appendNumber('2')">2</button>
+                            <button class="btn btn-number" onclick="appendNumber('3')">3</button>
+                            <button class="btn btn-decimal" onclick="appendNumber('.')">.</button>
+
+                            <button class="btn btn-number btn-zero" onclick="appendNumber('0')">0</button>
+                            <button class="btn btn-equals" onclick="calculate()">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Script/calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: auto;
+    font-family: sans-serif, "poppins";
+    color: rgb(48, 48, 48);
+}
+
+body{
+        background-color: rgb(237, 237, 237);
+        background-image: url("../Images/Spring\ flower-rafiki.png");
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ 
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.container form{
+    width: 100%;
+    max-width: 420px;
+    padding: 25px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(167, 167, 167);
+    position: relative;
+    transform: none;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.container form p input{
+    width: 95%;
+    height: 30px;
+    border: 1px solid rgb(118, 58, 118);
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.container form p select{
+    width: 100%;
+    height: 55px;
+    border: 1px solid rgb(118, 58, 118);
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.container form p button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    background:linear-gradient(rgb(207, 113, 207),rgb(118, 58, 118));
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+.container form p button:hover{
+    background:linear-gradient(rgb(118, 58, 118),rgb(207, 113, 207));
+}
+
+.container form  a{
+    color: rgb(118, 58, 118);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+.container form  a:hover{
+    color: rgb(207, 113, 207);
+}
+
+.container form h1{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.container form span{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.container form p{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.container form span input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid rgb(118, 58, 118);
+    accent-color: rgb(118, 58, 118);
+    cursor: pointer;
+}
+
+.container form span:hover {
+    color: rgb(118, 58, 118);
+}
+
+@media (max-width: 768px) {
+    .container form {
+        padding: 22px 20px;
+    }
+
+    .container form h1 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .container form {
+        padding: 18px 16px;
+    }
+
+    .container form p input,
+    .container form p select,
+    .container form p button {
+        font-size: 16px;
+    }
+}

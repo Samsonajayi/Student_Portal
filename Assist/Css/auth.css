@@ -6,13 +6,13 @@
 }
 
 body{
-        background-color: rgb(237, 237, 237);
-        background-image: url("../Images/Spring\ flower-rafiki.png");
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
+    background-color: rgb(237, 237, 237);
+    background-image: url("../Images/Spring\ flower-rafiki.png");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .container {

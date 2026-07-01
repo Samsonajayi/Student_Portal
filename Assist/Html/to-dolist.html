@@ -6,25 +6,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="../Css/dashboard.css">
     <link rel="stylesheet" href="../Css/toDo.css">
+    <link rel="icon" href="../Images/main-logo.png" type="image/x-icon">
     <title>To-Do List</title>
 </head>
 <body>
     <div class="dashboard">
-        <div class="dashboard-sidebar">
+                <div class="dashboard-sidebar">
             <div class="sidebar-header">
                 <a href="../Html/dashboard.html"><img src="../Images/main-logo.png" alt="logo"></a>
             </div>
             <ul class="sidebar-menu">
-                <li><a href="../Html/dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a></li>
-                <li><a href="../Html/course.html"><i class="fa-solid fa-book-open"></i>My Courses</a></li>
-                <li><a href="../Html/to-dolist.html" class="active"><i class="fa-solid fa-list-check"></i>To-Do List</a></li>
-                <li><a href="../Html/calculator.html"><i class="fa-solid fa-calculator"></i>Calculator</a></li>
-                <li><a href="../Html/gallery.html"><i class="fa-solid fa-image"></i>Gallery</a></li>
+                <li><a href="../Html/dashboard.html"><i class="fa-solid fa-house"></i> <span>Dashboard</span></a></li>
+                <li><a href="../Html/course.html"><i class="fa-solid fa-book-open"></i><span> My Courses</span></a></li>
+                <li><a href="../Html/to-dolist.html"><i class="fa-solid fa-list-check"></i><span>To-Do List</span></a></li>
+                <li><a href="../Html/calculator.html"><i class="fa-solid fa-calculator"></i><span>Calculator</span></a></li>
+                <li><a href="../Html/gallery.html"><i class="fa-solid fa-image"></i><span>Gallery</span></a></li>
             </ul>
             <ul class="sidebar-footer">
-                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+                <li><a href="../Auth/signin.html"><i class="fa-solid fa-right-from-bracket"></i><Span>Logout</Span></a></li>
             </ul>
         </div>
+
 
         <div class="dashboard-content">
             <header class="dashboard-header">
@@ -33,6 +35,9 @@
                     <i class="fa-solid fa-magnifying-glass search"></i>
                 </div>
                 <div class="header-user">
+                    <div class="live-clock">
+                        <span id="live-datetime">--:--:--</span>
+                    </div>
                     <img src="../Images/profile.png" alt="User avatar">
                     <div class="user-details">
                         <h3>John Doe</h3>
@@ -65,5 +70,6 @@
     </div>
 
     <script src="../Script/todo.js"></script>
+    <script src="../Script/dashboard.js"></script>
 </body>
 </html>

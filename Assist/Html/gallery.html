@@ -6,25 +6,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="../Css/dashboard.css">
     <link rel="stylesheet" href="../Css/gallery.css">
+        <link rel="icon" href="../Images/main-logo.png" type="image/x-icon">
     <title>Gallery</title>
 </head>
 <body>
     <div class="dashboard">
-        <div class="dashboard-sidebar">
+            <div class="dashboard-sidebar">
             <div class="sidebar-header">
                 <a href="../Html/dashboard.html"><img src="../Images/main-logo.png" alt="logo"></a>
             </div>
             <ul class="sidebar-menu">
-                <li><a href="../Html/dashboard.html"><i class="fa-solid fa-house"></i>Dashboard</a></li>
-                <li><a href="../Html/course.html"><i class="fa-solid fa-book-open"></i>My Courses</a></li>
-                <li><a href="../Html/to-dolist.html"><i class="fa-solid fa-list-check"></i>To-Do List</a></li>
-                <li><a href="../Html/calculator.html"><i class="fa-solid fa-calculator"></i>Calculator</a></li>
-                <li><a href="../Html/gallery.html" class="active"><i class="fa-solid fa-image"></i>Gallery</a></li>
+                <li><a href="../Html/dashboard.html"><i class="fa-solid fa-house"></i> <span>Dashboard</span></a></li>
+                <li><a href="../Html/course.html"><i class="fa-solid fa-book-open"></i><span> My Courses</span></a></li>
+                <li><a href="../Html/to-dolist.html"><i class="fa-solid fa-list-check"></i><span>To-Do List</span></a></li>
+                <li><a href="../Html/calculator.html"><i class="fa-solid fa-calculator"></i><span>Calculator</span></a></li>
+                <li><a href="../Html/gallery.html"><i class="fa-solid fa-image"></i><span>Gallery</span></a></li>
             </ul>
             <ul class="sidebar-footer">
-                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i>Logout</a></li>
+                <li><a href="../Auth/signin.html"><i class="fa-solid fa-right-from-bracket"></i><Span>Logout</Span></a></li>
             </ul>
         </div>
+
 
         <div class="dashboard-content">
             <header class="dashboard-header">
@@ -33,6 +35,9 @@
                     <i class="fa-solid fa-magnifying-glass search"></i>
                 </div>
                 <div class="header-user">
+                    <div class="live-clock">
+                        <span id="live-datetime">--:--:--</span>
+                    </div>
                     <img src="../Images/profile.png" alt="User avatar">
                     <div class="user-details">
                         <h3>John Doe</h3>
@@ -48,23 +53,15 @@
                 </div>
 
                 <div class="gallery-grid" id="gallery-grid">
-                    <!-- Wired images from Images folder with layout variants -->
-                    <figure class="gallery-item large"><img src="../Images/html5.png" alt="HTML5 logo"></figure>
-                    <figure class="gallery-item small"><img src="../Images/css3.png" alt="CSS3 logo"></figure>
-                    <figure class="gallery-item tall"><img src="../Images/javascript.png" alt="JavaScript"></figure>
-                    <figure class="gallery-item wide"><img src="../Images/react.png" alt="React logo"></figure>
-                    <figure class="gallery-item small"><img src="../Images/icons8-bootstrap-100.png" alt="Bootstrap logo"></figure>
-                    <figure class="gallery-item wide"><img src="../Images/about.png" alt="About"></figure>
-                    <figure class="gallery-item tall"><img src="../Images/Assignment.png" alt="Assignment"></figure>
-                    <figure class="gallery-item small"><img src="../Images/cherry blossom-rafiki.png" alt="Cherry blossom"></figure>
-                    <figure class="gallery-item large"><img src="../Images/Graduation-rafiki.png" alt="Graduation"></figure>
-                    <figure class="gallery-item small"><img src="../Images/hero-section.png" alt="Hero section"></figure>
-                    <figure class="gallery-item wide"><img src="../Images/hero-section2.png" alt="Hero section 2"></figure>
-                    <figure class="gallery-item small"><img src="../Images/service1.png" alt="Service 1"></figure>
-                    <figure class="gallery-item tall"><img src="../Images/service2.png" alt="Service 2"></figure>
-                    <figure class="gallery-item small"><img src="../Images/service4.png" alt="Service 4"></figure>
-                    <figure class="gallery-item wide"><img src="../Images/Spring flower-rafiki.png" alt="Spring flower"></figure>
-                    <figure class="gallery-item small"><img src="../Images/Group 399.png" alt="Group"></figure>
+                    <figure class="gallery-item"><img src="../Images/Gallary (1).jpg" alt="HTML5 logo"></figure>
+                    <figure class="gallery-item"><img src="../Images/Gallary (2).jpg" alt="CSS3 logo"></figure>
+                    <figure class="gallery-item"><img src="../Images/Gallary (3).jpg" alt="JavaScript"></figure>
+                    <figure class="gallery-item"><img src="../Images/Gallary (4).jpg" alt="React logo"></figure>
+                    <figure class="gallery-item"><img src="../Images/Gallary (5).jpg" alt="Bootstrap logo"></figure>
+                    <figure class="gallery-item"><img src="../Images/Gallary (6).jpg" alt="About"></figure>
+                    <figure class="gallery-item"><img src="../Images/Gallary (7).jpg" alt="Assignment"></figure>
+                    <figure class="gallery-item"><img src="../Images/Gallary (8).jpg" alt="Cherry blossom"></figure>
+                    <figure class="gallery-item"><img src="../Images/Gallary (9).jpg" alt="Graduation"></figure>
                 </div>
 
                 <!-- Lightbox -->
@@ -79,5 +76,6 @@
     </div>
 
     <script src="../Script/gallery.js"></script>
+    <script src="../Script/dashboard.js"></script>
 </body>
 </html>

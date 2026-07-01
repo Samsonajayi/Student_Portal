@@ -95,8 +95,15 @@ li{
     color: #d8a1f0;
     margin-right: 10px;
 }
+.dashboard .dashboard-sidebar ul li a span{
+    color: #d8a1f0;
+    margin-right: 10px;
+}
 
 .dashboard .dashboard-sidebar ul li a:hover i{
+    color: #f7e3ff;
+}
+.dashboard .dashboard-sidebar ul li a:hover span{
     color: #f7e3ff;
 }
 
@@ -189,6 +196,57 @@ li{
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(55, 50, 96, 0.04);
     margin-left: auto;
+}
+
+.dashboard .dashboard-content .dashboard-header .header-user .live-clock{
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: #f6f0ff;
+    color: #7b3f7b;
+    font-weight: 700;
+    font-size: 13px;
+    min-width: 92px;
+    text-align: center;
+}
+
+.dashboard .dashboard-content .dashboard-header .theme-toggle{
+    border: none;
+    border-radius: 10px;
+    padding: 8px 10px;
+    background: #f6f0ff;
+    color: #7b3f7b;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+body.light-theme {
+    background-color: #f5f5f5;
+    color: #111827;
+}
+
+body.light-theme .dashboard-content,
+body.light-theme .dashboard-header,
+body.light-theme .card,
+body.light-theme .lhs,
+body.light-theme .rhs,
+body.light-theme .schedule {
+    background-color: #ffffff;
+    color: #111827;
+}
+
+body.light-theme .dashboard-header input,
+body.light-theme .dashboard-header .live-clock,
+body.light-theme .dashboard-header .theme-toggle {
+    background-color: #f3f4f6;
+    color: #111827;
+}
+
+body.light-theme .dashboard-header input {
+    border-color: #d1d5db;
+}
+
+body.light-theme .dashboard-sidebar {
+    background: radial-gradient(rgb(179, 90, 179), rgb(40, 8, 40));
 }
 .dashboard .dashboard-content .dashboard-header .header-user img{
     width: 52px;

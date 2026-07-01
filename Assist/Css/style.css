@@ -7,7 +7,7 @@
 }
 
 body{
-        background-color: rgb(237, 237, 237);
+    background-color: rgb(237, 237, 237);
 }
  
 
@@ -360,6 +360,7 @@ footer {
     margin-top: 70px;
     padding: 20px 0px;
     padding-bottom: 100px;
+    background: linear-gradient(rgba(210, 138, 210, 0.406),rgba(118, 58, 118, 0.697));
 }
 
 footer .foot ul {
@@ -377,8 +378,12 @@ footer .foot ul i {
     background: linear-gradient(rgb(207, 113, 207),rgb(118, 58, 118));
     color:white;
     border-radius: 60px;
-    padding: 18px;
-    margin-top: 20px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -403,20 +408,34 @@ footer h2{
 
 @media (max-width: 1024px) {
     header {
-        flex-wrap: wrap;
-        height: auto;
-        padding: 16px 20px;
-        gap: 12px;
+        padding: 1px 20px;
     }
 
     header nav {
         width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: none;
+    }
+
+        header .but {
+        display: flex;
+        width: 40%;
+        gap: 15px;
+    }
+
+    header .but a {
+        width: 100%;
+    }
+
+    header .but button {
+        width: 100%;
+    }
+
+    header img {
+        width: 160px;
+        height: auto;
     }
 
     .hero {
-        grid-template-columns: 1fr;
         line-height: normal;
         width: 95%;
         gap: 24px;
@@ -503,9 +522,8 @@ footer h2{
 
     header .but {
         display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 8px;
+        width: 40%;
+        gap: 15px;
     }
 
     header .but a {
@@ -522,11 +540,19 @@ footer h2{
     }
 
     .hero .rhs h1 {
-        font-size: 32px;
+        font-size: 20px;
+    }
+
+    .hero .rhs{
+        width: 90%;
     }
 
     .hero .rhs .headtext {
-        font-size: 42px;
+        font-size: 22px;
+    }
+    .hero .rhs p {
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .hero .rhs button {

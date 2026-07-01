@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="../Css/dashboard.css">
+    <link rel="icon" href="../Images/main-logo.png" type="image/x-icon">
 
     <title>Dashboard</title>
 </head>
@@ -22,7 +23,7 @@
                 <li><a href="../Html/gallery.html"><i class="fa-solid fa-image"></i><span>Gallery</span></a></li>
             </ul>
             <ul class="sidebar-footer">
-                <li><a href=""><i class="fa-solid fa-right-from-bracket"></i><Span>Logout</Span></a></li>
+                <li><a href="../Auth/signin.html"><i class="fa-solid fa-right-from-bracket"></i><Span>Logout</Span></a></li>
             </ul>
         </div>
 
@@ -33,6 +34,9 @@
                 <i class="fa-solid fa-magnifying-glass search"></i>
             </div>
             <div class="header-user">
+                <div class="live-clock">
+                    <span id="live-datetime">--:--:--</span>
+                </div>
                 <img src="../Images/profile.png" alt="User avatar">
                 <div class="user-details">
                     <h3>John Doe</h3>
@@ -180,5 +184,8 @@
     </section>
     </div>
     </div>
+
+    <script src="../Script/dashboard.js"></script>
+    <script src="../Script/theme.js"></script>
 </body>
 </html>

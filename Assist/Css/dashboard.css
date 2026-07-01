@@ -492,8 +492,9 @@ li{
 
     .dashboard .dashboard-sidebar .sidebar-footer li i,
     .dashboard .dashboard-sidebar .sidebar-menu li i{
-        width: 10px;
-        text-align: center;
+        margin:auto;
+        width: 100%;
+        font-size: 25px;
     }
 
     .dashboard .dashboard-sidebar ul {
@@ -539,9 +540,12 @@ li{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 540px) {
     .dashboard .dashboard-content {
         padding: 10px;
+    }
+    .content1 .cards {
+        grid-template-columns: 1fr;
     }
 
     .content1 .cards {
